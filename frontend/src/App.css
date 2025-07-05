@@ -1,0 +1,135 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Add subtle shadow and hover effect to list items */
+li {
+  background-color: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+li:hover {
+  background-color: #f1f7ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Style for completed items */
+li.completed {
+  color: #aaa;
+  text-decoration: line-through;
+  background-color: #e9ecef;
+}
+
+/* Add focus style to input */
+input:focus {
+  outline: 2px solid #007bff;
+  border-color: #007bff;
+  background: #f0f8ff;
+}
+
+/* Add spacing between buttons in list items */
+li button {
+  margin-left: 8px;
+  margin-right: 0;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+}
+
+/* Add icon-like effect to buttons */
+li button,
+button {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Add subtle animation to button hover */
+button:hover,
+li button:hover {
+  filter: brightness(1.1);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 2px 8px rgba(0, 123, 255, 0.08);
+}
+
+/* Responsive design for mobile */
+@media (max-width: 600px) {
+  .container {
+    padding: 0.5rem;
+    margin: 1rem;
+  }
+  form {
+    flex-direction: column;
+    gap: 10px;
+  }
+  input {
+    margin-right: 0;
+    width: 100%;
+  }
+  button {
+    width: 100%;
+  }
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
